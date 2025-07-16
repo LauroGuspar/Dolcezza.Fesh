@@ -1,0 +1,119 @@
+/* --------- Css para modal de Producto --------- */
+.modal-pago {
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-producto-contenido {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0; width: 540px;
+  max-width: 95vw;
+  box-shadow: 0 2px 32px 0 #0002;
+  position:relative;
+  animation: modalShow .2s;
+}
+@keyframes modalShow {
+  from {
+    opacity:0;
+    transform:scale(.94);
+  } to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+.cerrar-modal {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  font-size: 2.2em;
+  color: #f2799b;
+  cursor: pointer;
+  font-weight: bold;
+  z-index:2;
+}
+
+.modal-producto-flex {
+  display: flex;
+  gap: 30px;
+  padding: 32px 32px 28px 32px;
+  align-items: center;
+}
+.modal-producto-img img {
+  display: block;
+  width: 240px;
+}
+.modal-producto-info {
+  flex:1;
+  min-width:180px;
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+
+p#modal-precio-producto {
+    padding-bottom: 10px;
+}
+
+/* --------- CSS para Modal de Metodos de Pago --------- */
+.modal-pago {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-contenido {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2em;
+  width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 18px 0 #8883;
+}
+.cerrar-modal {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  font-size: 2em;
+  color: #f2799b;
+  cursor: pointer;
+}
+.modal-contenido input {
+  width: 90%;
+  margin-bottom: 12px;
+  padding: 7px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.modal-contenido label {
+  display:block;
+  text-align:left;
+  margin:10px 0 2px 0;
+  color:#555;
+}
+
+@media (max-width:700px){
+  .modal-producto-flex {
+    flex-direction:column;
+    gap:18px;
+  }
+  .modal-producto-img img {
+    width: 85vw;
+    max-width:320px;
+  }
+}

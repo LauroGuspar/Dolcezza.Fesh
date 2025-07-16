@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salados - Dolcezza</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/styleModal.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="../index.html" class="logo-link">
+        <img src="../img/dolcezza.png" alt="Logo Dolcezza" class="logo" />
+      </a>
+      <span class="titulo-sitio">Dolcezza Fresh Cooking</span>
+    </div>
+    <nav class="nav" id="nav">
+      <ul class="menu-principal">
+        <li><a href="../index.html">Inicio</a></li>
+        
+        <li class="menu-productos">
+          <input type="checkbox" id="toggle-productos">
+          <label for="toggle-productos" class="hamburguesa">Productos ▾</label>
+          <ul class="submenu">
+            <li><a href="../Postres/General.html">General</a></li>
+            <li><a href="../Postres/Chocolateria.html">Chocolatería</a></li>
+            <li><a href="../Postres/Dulces.html">Dulces</a></li>
+          </ul>
+        </li>
+        <li><a href="../Contacto.html">Contacto</a></li>
+        <li class="menu-usuario">
+          <input type="checkbox" id="toggle-usuario">
+          <label for="toggle-usuario" id="user-menu" class="hamburguesa">
+            <img src="../img/icon/usuario.png" alt="userIMG" class="imgUser">
+            Iniciar Sesión ▾
+          </label>
+          <ul class="submenu" id="user-dropdown">
+            <li><a href="../registro.html">Registrar</a></li>
+            <li><a href="../login.html">Iniciar sesión</a></li>
+          </ul>
+        </li>
+        <div>
+          <a href="../Carrito.html" class="cart-icon">
+            <img src="../img/car.png" alt="Carrito" class="icon-small"/>
+          </a>
+        </div>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="productos">
+    <h2>Explora nuestra selección de postres salados únicos y deliciosos</h2>
+    <div class="producto-lista">
+      <!-- Productos de la categoría salados -->
+      <div class="producto-img">
+        <img src="../img/Catálogo/canapes.jpg" alt="Canapes" class="img-producto"
+          data-nombre="Canapes"
+          data-precio="10"
+          data-img="../img/Catálogo/canapes.jpg"
+          data-descripcion="Deliciosos canapés variados."/>
+        <p>Canapes</p>
+        <p>S/10.00</p>
+        <button class="boton agregar-carrito" data-nombre="Canapes" data-precio="10" data-img="../img/Catálogo/canapes.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-img">
+        <img src="../img/Catálogo/empanadas.jpg" alt="Empanadas de jamón y queso" class="img-producto"
+          data-nombre="Empanadas de jamón y queso"
+          data-precio="15"
+          data-img="../img/Catálogo/empanadas.jpg"
+          data-descripcion="Deliciosas empanadas rellenas de jamón y queso."/>
+        <p>Empanadas de jamón y queso</p>
+        <p>S/15.00</p>
+        <button class="boton agregar-carrito" data-nombre="Empanadas de jamón y queso" data-precio="15" data-img="../img/Catálogo/empanadas.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-img">
+        <img src="../img/Catálogo/frutos_secos.jpg" alt="Barra de frutos secos" class="img-producto"
+          data-nombre="Barra de frutos secos"
+          data-precio="7"
+          data-img="../img/Catálogo/frutos_secos.jpg"
+          data-descripcion="Deliciosa barra de frutos secos."/>
+        <p>Barra de frutos secos</p>
+        <p>S/7.00</p>
+        <button class="boton agregar-carrito" data-nombre="Barra de frutos secos" data-precio="7" data-img="../img/Catálogo/frutos_secos.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-img">
+        <img src="../img/Catálogo/tarta_queso.jpg" alt="Tarta de queso" class="img-producto"
+          data-nombre="Tarta de queso"
+          data-precio="15"
+          data-img="../img/Catálogo/tarta_queso.jpg"
+          data-descripcion="Deliciosa tarta de queso."/>
+        <p>Tarta de queso</p>
+        <p>S/15.00</p>
+        <button class="boton agregar-carrito" data-nombre="Tarta de queso" data-precio="15" data-img="../img/Catálogo/tarta_queso.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-img">
+        <img src="../img/Catálogo/cheesecake_Azul.jpg" alt="Cheesecake con queso azul" class="img-producto"
+          data-nombre="Cheesecake con queso azul"
+          data-precio="15"
+          data-img="../img/Catálogo/cheesecake_Azul.jpg"
+          data-descripcion="Delicioso cheesecake con queso azul."/>
+        <p>Cheesecake con queso azul</p>
+        <p>S/15.00</p>
+        <button class="boton agregar-carrito" data-nombre="Cheesecake con queso azul" data-precio="15" data-img="../img/Catálogo/cheesecake_Azul.jpg">Agregar al carrito</button>
+      </div>
+      <div class="producto-img">
+        <img src="../img/Catálogo/cheesecake-salado.jpg" alt="Cheesecake salado" class="img-producto"
+          data-nombre="Cheesecake salado"
+          data-precio="15"
+          data-img="../img/Catálogo/cheesecake-salado.jpg"
+          data-descripcion="Delicioso cheesecake salado."/>
+        <p>Cheesecake salado</p>
+        <p>S/15.00</p>
+        <button class="boton agregar-carrito" data-nombre="Cheesecake salado" data-precio="15" data-img="../img/Catálogo/cheesecake-salado.jpg">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo y descripción -->
+      <div class="footer-section center">
+        <img src="../img/dolcezza.png" alt="Logo Dolcezza" class="footer-logo-grande" />
+        <h3>Dolcezza</h3>
+        <p>Deliciosos postres artesanales elaborados con ingredientes frescos...</p>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../Postres/General.html">Postres</a></li>
+          <li><a href="../Postres/Chocolateria.html">Chocolatería</a></li>
+          <li><a href="../Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-section">
+        <h4>Contáctanos</h4>
+        <p>
+          <a href="https://wa.me/51945027855" target="_blank">
+            <img src="../img/ws.png" alt="WhatsApp" /> <span>945027855</span>
+          </a>
+        </p>
+        <p> 
+          <a href="https://www.instagram.com/dolcezza.freshcooking" target="_blank">
+            <img src="../img/instagram.svg" alt="Instagram" /> <span>Dolcezza.freshcooking</span>
+          </a>
+        </p>
+        <p>📍 Chiclayo, Perú</p>
+      </div>
+      <!---Métodos de Pago -->
+      <div class="footer-section">
+        <h4>Métodos de Pago</h4>
+        <p>
+          <a href="../Carrito.html#modal-tarjeta" class="metodo-pago-link">
+            <img src="../img/MetodosPago/VISA.png" alt="Visa"/><span>Visa</span>
+          </a>
+        </p>
+        <p>
+          <a href="../Carrito.html#modal-tarjeta" class="metodo-pago-link">
+            <img src="../img/MetodosPago/MasterCard.png" alt="Mastercard"/><span>Mastercard</span>
+          </a>
+        </p>
+        <p>
+          <a href="../Carrito.html#modal-yape" class="metodo-pago-link">
+            <img src="../img/MetodosPago/YAPE.png" alt="Yape"/><span>Yape</span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Créditos -->
+    <div class="footer-bottom">
+      <p>© 2025 Dolcezza Fresh Cooking. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div id="modal-producto" class="modal-pago" style="display:none;">
+    <div class="modal-producto-contenido">
+      <span class="cerrar-modal" onclick="cerrarModalProducto()">&times;</span>
+      <div class="modal-producto-flex">
+        <div class="modal-producto-img">
+          <img id="modal-img-producto" src="" alt="" style="width:240px; border-radius:12px;">
+        </div>
+        <div class="modal-producto-info">
+          <h3 id="modal-nombre-producto"></h3>
+          <p id="modal-desc-producto" style="margin-bottom:20px;"></p>
+          <p id="modal-precio-producto" style="font-weight:bold;"></p>
+          <button id="modal-btn-carrito" class="boton agregar-carrito-modal">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/script.js"></script>
+</body>
+</html>
